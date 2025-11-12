@@ -1,0 +1,64 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Remove Bullet Points and default list styling*/
+.nav-menu {
+    list-style: none;
+}
+
+/* Remove underlines from links */
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Make the Nav Bar a Flex Container with a background color*/
+nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex; /* activates Flexbox */
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Style the links */
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    background-color: #2c3ea6;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color .6s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #34495a;
+}
+/* Set new container to hold logo and menu items*/
+.nav-container {
+    display: flex;
+    justify-content:space-between;  /* Logo goes all the way left, menu goes all the way right*/
+    align-items: center;
+    background-color: #2c3e50;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
